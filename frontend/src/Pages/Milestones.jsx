@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Award,
   BookOpen,
@@ -5,9 +6,8 @@ import {
   Globe,
   MessageSquare,
   Monitor,
-  Users,
+  Users
 } from "lucide-react";
-import React from "react";
 
 const ProjectMilestones = () => {
   const milestones = [
@@ -93,11 +93,22 @@ const ProjectMilestones = () => {
       className="max-w-4xl mx-auto p-6 bg-gradient-to-br from-green-50 min-h-screen"
     >
       {/* Header */}
-      <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-[#10b981] mb-2">
-          Project Milestones
-        </h1>
-        <div className="w-24 h-1 bg-[#10b981] mx-auto"></div>
+      <div className="text-center pt-12 pb-6">
+        <div className="flex items-center justify-center gap-6">
+          <div className="flex-1 h-px bg-gradient-to-r from-transparent via-emerald-300 to-green-400"></div>
+          <div className="relative">
+            <h1 className="text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-700 via-green-500 to-teal-600 drop-shadow-sm whitespace-nowrap">
+              Project Milestones
+            </h1>
+            <div className="absolute -top-2 -right-2">
+              <div className="w-8 h-8 text-emerald-400">✨</div>
+            </div>
+          </div>
+          <div className="flex-1 h-px bg-gradient-to-r from-green-400 via-emerald-300 to-transparent"></div>
+        </div>
+        <p className="text-lg text-gray-600 mt-4 font-medium">
+          Track our project progress and achievements ✨
+        </p>
       </div>
 
       {/* Timeline */}

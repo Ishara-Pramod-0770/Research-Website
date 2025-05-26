@@ -93,7 +93,7 @@ const Navbar = () => {
               </span>
             </a>
             <a
-              href="/contact"
+              href="#Contact"
               className="flex items-center space-x-3 text-xl font-semibold text-gray-900 hover:text-emerald-600 transition-all duration-300 group"
             >
               <FaEnvelope className="h-5 w-5 text-emerald-500" />

@@ -1,4 +1,4 @@
-import { Building, Crown, GraduationCap, Mail, Users } from "lucide-react";
+import { Building, Crown, GraduationCap, Mail, Users, Sparkles } from "lucide-react";
 import React from "react";
 
 const OurTeam = () => {
@@ -81,19 +81,30 @@ const OurTeam = () => {
   ];
 
   return (
-    <div id="OurTeam" className="max-w-7xl mx-auto p-8 bg-white min-h-screen">
+    <div id="OurTeam" className="max-w-7xl mx-auto p-2 bg-white min-h-screen">
       {/* Header */}
-      <div className="text-center mb-12">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-[#10b981] mb-2">Our Team</h1>
-          <div className="w-24 h-1 bg-[#10b981] mx-auto"></div>
+      <div className="text-center pt-12 pb-6">
+        <div className="flex items-center justify-center gap-6">
+          <div className="flex-1 h-px bg-gradient-to-r from-transparent via-emerald-300 to-green-400"></div>
+          <div className="relative">
+            <h1 className="text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-700 via-green-500 to-teal-600 drop-shadow-sm whitespace-nowrap">
+              Our Team
+            </h1>
+            <div className="absolute -top-2 -right-2">
+              <Sparkles className="w-8 h-8 text-emerald-400 animate-pulse" />
+            </div>
+          </div>
+          <div className="flex-1 h-px bg-gradient-to-r from-green-400 via-emerald-300 to-transparent"></div>
         </div>
+        <p className="text-lg text-gray-600 mt-4 font-medium">
+          Meet our talented team members ✨
+        </p>
       </div>
 
       {/* Team Cards Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {teamMembers.map((member) => (
-          <>
+          <React.Fragment key={member.id}>
             {member.role === "Supervisor" && (
               <div className="lg:col-span-4 md:col-span-2 text-center mt-8 mb-4">
                 <h4 className="text-2xl font-bold text-gray-800">
@@ -102,7 +113,6 @@ const OurTeam = () => {
               </div>
             )}
             <div
-              key={member.id}
               className={`group relative bg-white rounded-2xl shadow-lg ${
                 member.cardColor
               } border-2 transition-all duration-500 hover:shadow-2xl hover:scale-105 transform cursor-pointer overflow-hidden ${
@@ -320,7 +330,7 @@ const OurTeam = () => {
                 className={`absolute -inset-1 bg-gradient-to-r ${member.gradientFrom} ${member.gradientTo} rounded-2xl opacity-0 group-hover:opacity-20 blur transition-opacity duration-500 -z-10`}
               ></div>
             </div>
-          </>
+          </React.Fragment>
         ))}
       </div>
 

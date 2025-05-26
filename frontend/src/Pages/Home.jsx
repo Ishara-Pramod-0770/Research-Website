@@ -9,6 +9,7 @@ import { Milestone } from "lucide-react";
 import OurTeam from "./OurTeam";
 import Documents from "./Documents";
 import Presentations from "./Presentation";
+import ContactUs from "./ContactUs";
 
 const Home = () => {
   return (
@@ -26,8 +27,8 @@ const Home = () => {
        <Documents />
        <Presentations />
        <OurTeam/>
-      
       <Departments />
+      <ContactUs/>
     </div>
   );
 };

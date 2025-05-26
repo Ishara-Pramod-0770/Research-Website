@@ -97,7 +97,7 @@ const Presentations = () => {
 
     return (
         <div id='Presentation' className="min-h-screen bg-white via-emerald-50 to-teal-50">
-            <div className="text-center pt-12 pb-6">
+            <div className="text-center pt-12 pb-0">
                 <div className="flex items-center justify-center gap-6">
                     <div className="flex-1 h-px bg-gradient-to-r from-transparent via-emerald-300 to-green-400"></div>
                     <div className="relative">
