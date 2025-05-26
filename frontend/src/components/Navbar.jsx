@@ -14,7 +14,7 @@ const Navbar = () => {
   const [show, setShow] = useState(false);
 
   return (
-    <nav className="bg-transparent py-6 px-6 sticky top-0 z-50 backdrop-blur-lg">
+    <nav className="fixed bg-transparent py-6 px-6 sticky top-0 z-50 backdrop-blur-lg">
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo */}
         <div className="flex-shrink-0">
