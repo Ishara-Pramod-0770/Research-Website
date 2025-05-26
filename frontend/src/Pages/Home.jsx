@@ -2,7 +2,6 @@ import React from "react";
 import Biography from "../components/Biography";
 import Departments from "../components/Departments";
 import Hero from "../components/Hero";
-import MessageForm from "../components/MessageForm";
 import Domain from "./Domain";
 import Milestones from "./Milestones";
 import Navbar from "../components/Navbar";
@@ -25,7 +24,6 @@ const Home = () => {
        <OurTeam/>
       
       <Departments />
-      <MessageForm />
     </div>
   );
 };
