@@ -7,6 +7,8 @@ import Milestones from "./Milestones";
 import Navbar from "../components/Navbar";
 import { Milestone } from "lucide-react";
 import OurTeam from "./OurTeam";
+import Documents from "./Documents";
+import Presentations from "./Presentation";
 
 const Home = () => {
   return (
@@ -21,6 +23,8 @@ const Home = () => {
       <Biography imageUrl={"/about.png"} />
        <Domain/>
        <Milestones/>
+       <Documents />
+       <Presentations />
        <OurTeam/>
       
       <Departments />

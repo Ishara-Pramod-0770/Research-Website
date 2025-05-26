@@ -14,7 +14,7 @@ const Navbar = () => {
   const [show, setShow] = useState(false);
 
   return (
-    <nav className="fixed bg-transparent py-6 px-6 sticky top-0 z-50 backdrop-blur-lg">
+    <nav className="fixed bg-transparent py-6 px-6 top-0 z-50 backdrop-blur-lg">
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo */}
         <div className="flex-shrink-0">
@@ -63,7 +63,7 @@ const Navbar = () => {
               </span>
             </a>
             <a
-              href="/documents"
+              href="#Documents"
               className="flex items-center space-x-3 text-xl font-semibold text-gray-900 hover:text-emerald-600 transition-all duration-300 group"
             >
               <FaFileAlt className="h-5 w-5 text-emerald-500" />
@@ -73,7 +73,7 @@ const Navbar = () => {
               </span>
             </a>
             <a
-              href="/presentations"
+              href="#Presentation"
               className="flex items-center space-x-3 text-xl font-semibold text-gray-900 hover:text-emerald-600 transition-all duration-300 group"
             >
               <FaChalkboardTeacher className="h-5 w-5 text-emerald-500" />
